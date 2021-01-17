@@ -6,6 +6,18 @@ namespace ClassMetotDemo
 {
     class MusteriManager
     {
+        Musteri musteri = new Musteri();
+        public void CustomerList(Musteri[] musteriler)
+        {
+            foreach (Musteri musteri in musteriler)
+            {
+                Console.WriteLine("Id : " + musteri.Id);
+                Console.WriteLine("Ad : " + musteri.Ad);
+                Console.WriteLine("Soyad : " + musteri.Soyad);
+                Console.WriteLine("Bakiye : " + musteri.Bakiye);
+                Console.WriteLine("********************");
+            }
+        }
         public void Show(Musteri musteri)
         {
                 Console.WriteLine("Id : " + musteri.Id);

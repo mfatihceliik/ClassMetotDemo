@@ -30,7 +30,14 @@ namespace ClassMetotDemo
             musteri4.Soyad = "Çelik";
             musteri4.Bakiye = 6000;
 
+            Musteri[] musteriler = new Musteri[]
+            {
+                musteri1,musteri2,musteri3,musteri4
+            };
+
             MusteriManager musteriManager = new MusteriManager();
+            musteriManager.CustomerList(musteriler);
+
             musteriManager.Show(musteri1);
             musteriManager.Show(musteri2);
             musteriManager.Show(musteri3);
